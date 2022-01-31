@@ -115,6 +115,7 @@ body {
 }
 .mail-icon {
   margin-right: 10px;
+  justify-content: center;
   align-items: center;
   fill: currentColor;
 }
@@ -157,6 +158,9 @@ body {
   background-size: cover;
 }
 .hero-title {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
   font-size: 44px;
   line-height: 1.36;
@@ -295,12 +299,11 @@ padding-bottom: 30px;
 .team-socials-link:hover {
 background-color: #2196F3;
 }
+
 .team-socials-link:hover .team-socials-icon {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
-.team-socials-icon {
-  fill: #AFB1B8;
-}
+
 .team-socials-item + .team-socials-item {
   margin-left: 10px;
 }
