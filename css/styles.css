@@ -113,7 +113,17 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
-
+.mail-icon {
+  margin-right: 10px;
+  align-items: center;
+  fill: currentColor;
+}
+.tel-icon{
+  margin-left: 30px;
+  margin-right: 10px;
+  align-items: center;
+  fill: currentColor;
+}
 .tel-link:hover,
 .tel-link:focus,
 .tel-link:active,
@@ -243,13 +253,13 @@ body {
 .our-team-list {
   display: flex;
 }
-.our-team-item {
+.our-team-item:not(:first-child) {
   width: calc(100% / 4 - 30px);
   margin-left: 30px;
 }
 .team-name-container {
-margin-top: 30px;
-margin-bottom: 30px;
+padding-top: 30px;
+padding-bottom: 30px;
 }
 .team-item-title {
   font-size: 16px;
@@ -279,6 +289,7 @@ margin-bottom: 30px;
   height: 44px;
   border-radius: 50%;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 .team-socials-link:hover {
@@ -388,7 +399,7 @@ background-color: #2196F3;
   height: auto;
 }
 .title-container {
-margin: 20px 24px 20px 24px;
+padding: 20px 24px 20px 24px;
 }
 .projects-link {
   text-decoration: none;
