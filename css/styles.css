@@ -8,6 +8,7 @@
   --hover-btn-color: #188ce8;
   --footer-item-adres-color: rgba(255, 255, 255, 0.6);
   --box-shadow-color: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  --icons-background-color: #F5F4FA;
 }
 img {
   display: block;
@@ -202,9 +203,33 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
+.advantages-icons-list {
+  display: flex;
+  justify-content: center;
+}
 
 .advantages-list {
   display: flex;
+  margin-top: 30px;
+}
+.advantages-item-icon {
+  width: 270px;
+  height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--icons-background-color);
+}
+.avantages-icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.advantages-item-icon:not(:first-child) {
+  width: calc(100% / 4 - 30px);
+  margin-left: 30px;
+}
+.advantages-icon {
+margin: 25px 100px 25px 100px;
 }
 .advantages-item + .advantages-item {
   margin-left: 30px;
@@ -244,7 +269,7 @@ body {
 }
 /*--our-team-section--*/
 .our-team-section {
-  background-color: #F5F4FA;
+  background-color: var(--icons-background-color);
 }
 .our-team-title {
   margin-bottom: 50px;
@@ -297,15 +322,25 @@ padding-bottom: 30px;
   justify-content: center;
 }
 .team-socials-link:hover {
-background-color: #2196F3;
+background-color: var(--accent-color);
 }
-
+.team-socials-icon {
+  fill: var(--primary-text-color);
+}
 .team-socials-link:hover .team-socials-icon {
-  fill: #ffffff;
+  fill: var(--hero-text-color);
 }
 
 .team-socials-item + .team-socials-item {
   margin-left: 10px;
+}
+/* regular-customers-section*/
+.regular-customers-title {
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--header-links-title-text-color);
 }
 /*--footer--*/
 .footer {
